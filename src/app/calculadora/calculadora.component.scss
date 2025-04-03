@@ -1,0 +1,92 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-box form {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 25px;
+    
+}
+
+.form-box h2{
+    text-align: center;
+}
+
+.form-box label {
+    margin-left: 10px;
+    
+}
+
+.form-box input{
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    padding-left: 15px;
+    height: 25px;
+
+}
+
+.form-box input:focus {
+    outline: none;
+    border: none;
+}
+
+.form-box button {
+    border: none;
+    border-radius: 25px;
+    background-color: orange;
+    margin: 0 auto;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: rgb(255, 102, 0);
+}
+
+/* Area do Resultado */
+
+.form-box .result {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 25px;
+    min-width: none;
+}
+
+@media (max-width: 815px){
+    .form-box form {
+            width: 85%;
+            padding: 20px;
+    }
+
+    .form-box .result {
+        width: 85%;
+        padding: 20px;
+    }
+}
